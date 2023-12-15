@@ -1,0 +1,10 @@
+# app/views/process/start.turbo_stream.erb
+
+<%= turbo_stream.update 'container' do %>
+  <div>
+    <!-- Your HTML update goes here -->
+  </div>
+  <script>
+    alert('Process started!');
+  </script>
+<% end %>

@@ -2,5 +2,12 @@
   <h1>Welcome#index</h1>
   <p>Find me in app/views/welcome/index.html.erb</p>
 
-  <%= link_to "Start Large Proces", process_index_path, class: "btn btn-primary", remote: true %>
+  <%= turbo_frame_tag "container" do %>
+    <div>Hello</div>
+  <% end %>
+
+  <%= form_with url: start_process_path, method: :post do %>
+    <%= button_tag 'Start Process' %>s
+  <% end %>
+
 </div>
