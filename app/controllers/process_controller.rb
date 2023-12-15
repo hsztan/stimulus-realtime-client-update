@@ -1,5 +1,5 @@
 class ProcessController < ApplicationController
   def index
-    sleep 10 # Simulate a long-running process
+    sleep 2 # Simulate a long-running process
   end
 end
