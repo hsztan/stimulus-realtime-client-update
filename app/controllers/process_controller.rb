@@ -1,5 +1,5 @@
 class ProcessController < ApplicationController
   def index
-    sleep 2 # Simulate a long-running process
+    ProgressIncrementJob.perform_later
   end
 end
